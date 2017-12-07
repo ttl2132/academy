@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>	Me </title>
+</head>
+
+<style type="text/css">
+
+	body {
+		background-color: #9bddff;
+	}
+	h2 {
+		font-style: italic;
+		font-weight: bolder;
+	}
+	h1 {
+		color: pink;
+	}
+</style>
+
+<body>
+	<h1> Hello {{ nameList }} </h1>
+	<div>
+		<ul>
+			{% for i in numbers %}
+			{% if i%2==0 %}
+			<li style="color:purple"> num {{ i }}</li>
+			{% else %}
+			<li> num {{i}} </li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+		<ol>
+		</ol>
+	</div>
+	<h1> Tian Low </h1>
+	<h2> 1st Year SEAS~~~</h2>
+	<p> Just a paragraph. EZ PZ. </p>
+	<form>
+		<label for=Pretty> name </label>
+		<input type="text" name="name" id="name">
+	</form>
+</body>
+</html>
